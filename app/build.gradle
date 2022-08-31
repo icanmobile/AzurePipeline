@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('./icanmobile.keystore')
+            storePassword 'icanmobile'
+            keyAlias 'icanmobile'
+            keyPassword 'icanmobile'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
