@@ -21,13 +21,3 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'assembleRelease'
-
-- task: AndroidSigning@2
-  inputs:
-    apkFiles: '**/*.apk'
-    jarsign: true
-    jarsignerKeystoreFile: './icanmobile.keystore'
-    jarsignerKeystorePassword: 'icanmobile'
-    jarsignerKeystoreAlias: 'icanmobile'
-    jarsignerKeyPassword: 'icanmobile'
-    zipalign: true
